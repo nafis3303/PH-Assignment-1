@@ -3,32 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #ffffff;
     color: #0b1a2b;
     min-width: 1920px;
 }
+
 .wrap {
     width: 1320px;
     margin: 0 auto;
 }
+
 .section {
     padding: 70px 0;
 }
+
 .header {
     background: #ffffff;
     border-bottom: 1px solid #e6eaf0;
 }
+
 .nav {
     height: 78px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .brand img {
     height: 44px;
 }
+
 .menu {
     display: flex;
     gap: 34px;
@@ -36,6 +43,7 @@ body {
     font-weight: 600;
     opacity: 0.9;
 }
+
 .nav-btn {
     background: #1c7904;
     color: #ffffff;
@@ -44,6 +52,7 @@ body {
     font-weight: 800;
     font-size: 12px;
 }
+
 .hero {
     height: 520px;
     background-image: url("assets/bg.png");
@@ -53,16 +62,19 @@ body {
     display: flex;
     align-items: center;
 }
+
 .hero-overlay {
     position: absolute;
     inset: 0;
     background: rgba(52, 57, 63, 0.72);
 }
+
 .hero-content {
     position: relative;
     text-align: center;
     color: #ffffff;
 }
+
 .badge {
     display: inline-flex;
     align-items: center;
@@ -75,32 +87,40 @@ body {
     font-weight: 800;
     margin-bottom: 18px;
 }
+
 .badge-dot {
     width: 8px;
     height: 8px;
     border-radius: 50%;
     background: #2f6d3a;
+    box-shadow: 0 0 0 4px #48814170;
 }
+
 .hero h1 {
     font-size: 60px;
     line-height: 1.05;
     font-weight: 900;
     margin-bottom: 14px;
 }
+
 .hero-green {
     color: #2f6d3a;
 }
+
 .hero-sub {
     font-size: 18px;
     line-height: 1.6;
     opacity: 0.92;
     margin-bottom: 22px;
 }
+
 .hero-buttons {
     display: flex;
     justify-content: center;
     gap: 14px;
 }
+
+/* Button */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -111,15 +131,23 @@ body {
     font-weight: 900;
     font-size: 12px;
 }
+
+.btn img {
+     width: 16px;
+     height: 16px;
+ }
+
 .btn-green {
     background: #2f6d3a;
     color: #ffffff;
 }
+
 .btn-dark {
     background: rgba(255, 255, 255, 0.12);
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.35);
 }
+
 .btn-outline {
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.45);
@@ -127,11 +155,272 @@ body {
     padding: 10px 18px;
     border-radius: 4px;
 }
+
 .btn-outline:hover,
 .btn-dark:hover {
     background: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.6);
 }
+
 .btn-green:hover {
     background: #255c30;
+}
+
+/* Notes */
+.section-head {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.section-head h2 {
+    font-size: 34px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.section-head p {
+    font-size: 14px;
+    color: #7a8796;
+}
+
+.cards {
+    width: 1120px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #eef2f6;
+    border-radius: 6px;
+    padding: 30px 18px;
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.04);
+}
+
+.card-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #f25c5c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+}
+
+.card-icon img {
+    width: 20px;
+    height: 20px;
+}
+.card h3 {
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 11px;
+    color: #7a8796;
+}
+
+.second {
+    width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 560px 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.second-imgbox {
+    background: #f6f7f9;
+    border-radius: 8px;
+    padding: 22px;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #2f6d3a;
+    margin-bottom: 12px;
+}
+
+.second-right h2 {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 14px;
+}
+
+.desc {
+    font-size: 13px;
+    color: #7a8796;
+    line-height: 1.6;
+    max-width: 520px;
+    margin-bottom: 18px;
+}
+
+/* checklists */
+.checklist {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+    font-size: 12px;
+}
+
+.checklist li {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    line-height: 1.4;
+    color: #0b1a2b;
+}
+
+.checklist img {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
+
+/* bonus-section  */
+.early {
+    width: 1120px;
+    margin: 0 auto;
+    background: #f4f2ed;
+    border-radius: 8px;
+    padding: 46px 20px;
+    text-align: center;
+}
+
+.early h2 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.early-sub {
+    font-size: 12px;
+    color: #7a8796;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.early-btn {
+    margin-bottom: 16px;
+    box-shadow: #0b1a2b33 5px 8px 18px;
+}
+
+.early-foot {
+    font-size: 11px;
+    color: #7a8796;
+}
+
+/* footer */
+.footer {
+    background: #061b2e;
+    color: #ffffff;
+    padding: 44px 0 18px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0 26px;
+}
+
+.footer-logo {
+    height: 44px;
+}
+
+.footer-right {
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social img {
+    width: 12px;
+    height: 12px;
+}
+
+.footer-line {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.14);
+    margin-top: 12px;
+}
+
+.footer-copy {
+    text-align: center;
+    font-size: 11px;
+    opacity: 0.9;
+    padding: 14px 0 6px;
+}
+
+.nav-btn:hover {
+    background: #249a04;
+    cursor: pointer;
+}
+
+/* buttons */
+.btn:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+.early-btn:hover {
+    background: #255c30;
+}
+
+/* icoms */
+.social:hover {
+    background: #e4e5e7;
+    cursor: pointer;
+}
+
+.social:hover img {
+    filter: brightness(5);
+}
+
+/* cards */
+.card {
+    transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.12);
+    border-color: #dfe5ee;
+    cursor: pointer;
+}
+
+.card:hover .card-icon {
+    background: #e94f4f;
+    
 }
