@@ -44,3 +44,94 @@ body {
     font-weight: 800;
     font-size: 12px;
 }
+.hero {
+    height: 520px;
+    background-image: url("assets/bg.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(52, 57, 63, 0.72);
+}
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.92);
+    color: #2f6d3a;
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+.badge-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #2f6d3a;
+}
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.05;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+.hero-green {
+    color: #2f6d3a;
+}
+.hero-sub {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.92;
+    margin-bottom: 22px;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 11px 16px;
+    border-radius: 4px;
+    font-weight: 900;
+    font-size: 12px;
+}
+.btn-green {
+    background: #2f6d3a;
+    color: #ffffff;
+}
+.btn-dark {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+.btn-outline {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 4px;
+}
+.btn-outline:hover,
+.btn-dark:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+.btn-green:hover {
+    background: #255c30;
+}
